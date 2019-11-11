@@ -1,0 +1,13 @@
+query menu($user: String!) {
+  menu(user: $user) {
+      place
+      items{
+        title
+  	    items{
+    	    text
+      	  icon
+        	route
+      	}
+      }
+    }
+}
